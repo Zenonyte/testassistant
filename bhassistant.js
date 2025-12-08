@@ -1,9 +1,12 @@
 // ==UserScript==
 // @name         [RUBY] BH Assistant
 // @namespace    http://tampermonkey.net/
-// @version      67.69
+// @version      1.0
 // @description  fent is my passion
 // @include      /^https:\/\/r.*a.*tech\/?/
+// @updateURL    https://raw.githubusercontent.com/Zenonyte/BHassistant/refs/heads/main/bhassistant.js
+// @downloadURL  https://raw.githubusercontent.com/Zenonyte/BHassistant/refs/heads/main/bhassistant.js
+// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @run-at       document-idle
 // @grant        none
 // ==/UserScript==

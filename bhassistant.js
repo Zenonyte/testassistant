@@ -6,7 +6,7 @@
 // @include      /^https:\/\/r.*a.*tech\/?/
 // @updateURL    https://raw.githubusercontent.com/Zenonyte/BHassistant/refs/heads/main/bhassistant.js
 // @downloadURL  https://raw.githubusercontent.com/Zenonyte/BHassistant/refs/heads/main/bhassistant.js
-// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @icon         https://raw.githubusercontent.com/Zenonyte/BHassistant/refs/heads/main/icon.svg
 // @run-at       document-idle
 // @grant        none
 // ==/UserScript==

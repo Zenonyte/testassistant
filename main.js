@@ -4,9 +4,9 @@
 // @version      67.69
 // @description  fent is my passion
 // @include      /^https:\/\/r.*a.*tech\/?/
-// @updateURL    https://raw.githubusercontent.com/Zenonyte/BHassistant/refs/heads/main/bhassistant.js
-// @downloadURL  https://raw.githubusercontent.com/Zenonyte/BHassistant/refs/heads/main/bhassistant.js
-// @icon         https://raw.githubusercontent.com/Zenonyte/BHassistant/refs/heads/main/icon.svg
+// @updateURL    https://raw.githubusercontent.com/Zenonyte/testassistant/refs/heads/main/main.js
+// @downloadURL  https://raw.githubusercontent.com/Zenonyte/testassistant/refs/heads/main/main.js
+// @icon         data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgRnJlZSA3LjEuMCBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20vbGljZW5zZS9mcmVlIChJY29uczogQ0MgQlkgNC4wLCBGb250czogU0lMIE9GTCAxLjEsIENvZGU6IE1JVCBMaWNlbnNlKSBDb3B5cmlnaHQgMjAyNSBGb250aWNvbnMsIEluYy4gLS0+PHBhdGggZmlsbD0iIzAxRjhDMyIgZD0iTTM1MiAwYzE3LjcgMCAzMiAxNC4zIDMyIDMyIDAgNTcuOC0yNC40IDEwNC44LTU3LjQgMTQ0LjUtMjQuMSAyOC45LTUzLjggNTUuMS04My42IDc5LjUgMjkuOCAyNC41IDU5LjUgNTAuNiA4My42IDc5LjUgMzMgMzkuNiA1Ny40IDg2LjcgNTcuNCAxNDQuNSAwIDE3LjctMTQuMyAzMi0zMiAzMnMtMzItMTQuMy0zMi0zMkw2NCA0ODBjMCAxNy43LTE0LjMgMzItMzIgMzJTMCA0OTcuNyAwIDQ4MEMwIDQyMi4yIDI0LjQgMzc1LjIgNTcuNCAzMzUuNSA4MS41IDMwNi42IDExMS4yIDI4MC41IDE0MSAyNTYgMTExLjIgMjMxLjUgODEuNSAyMDUuNCA1Ny40IDE3Ni41IDI0LjQgMTM2LjggMCA4OS44IDAgMzIgMCAxNC4zIDE0LjMgMCAzMiAwUzY0IDE0LjMgNjQgMzJsMjU2IDBjMC0xNy43IDE0LjMtMzIgMzItMzJ6TTI4My41IDM4NGwtMTgyLjkgMGMtOC4yIDEwLjUtMTUuMSAyMS4xLTIwLjYgMzJsMjI0LjIgMGMtNS42LTEwLjktMTIuNS0yMS41LTIwLjYtMzJ6TTIzOCAzMzZjLTE0LjMtMTMtMjkuOC0yNS44LTQ2LTM5LTE2LjIgMTMuMS0zMS43IDI2LTQ2IDM5bDkyIDB6TTEwMC41IDEyOGwxODIuOSAwYzguMi0xMC41IDE1LjEtMjEuMSAyMC42LTMyTDc5LjkgOTZjNS42IDEwLjkgMTIuNSAyMS41IDIwLjYgMzJ6TTE0NiAxNzZjMTQuMyAxMyAyOS44IDI1LjggNDYgMzkgMTYuMi0xMy4xIDMxLjctMjYgNDYtMzlsLTkyIDB6Ii8+PC9zdmc+
 // @run-at       document-idle
 // @grant        none
 // ==/UserScript==

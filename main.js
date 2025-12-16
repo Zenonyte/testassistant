@@ -45,8 +45,9 @@
             id: 'MISSING_APPEARANCE',
             message: 'Missing appearance.',
             condition: (ctx) => {
-                const { functionality, appearance } = ctx;
-                return functionality === 'Working' && isEmpty(appearance);
+                const { functionality, appearance } = ctx
+                const isWorkingOrMinor = ['Working', 'Minor Fault'].includes(functionality);
+                return isWorkingOrMinor && isEmpty(appearance);
             }
         },
         {

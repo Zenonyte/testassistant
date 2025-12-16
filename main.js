@@ -137,7 +137,7 @@
             `[BH] Battery: ${ctx.battery || 'null'} ` +
             `Functionality: ${ctx.functionality || 'null'} ` +
             `Appearance: ${ctx.appearance || 'null'} ` +
-            `Fault: ${ctx.fault || 'null'}`;
+            `Fault: ${ctx.faultDescription || 'null'}`;
 
         console.log(logLine);
 

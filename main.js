@@ -196,7 +196,7 @@
         `;
 
         content.innerHTML = `
-            <h2 style="margin: 0 0 16px 0; font-size: 22px;">⚠️ Device validation issues</h2>
+            <h2 style="margin: 0 0 16px 0; font-size: 22px;">⚠️</h2>
             <ul style="margin: 0 0 18px 0; padding-left: 20px; font-size: 14px; line-height: 1.4;">
                 ${messages.map(msg => `<li style="margin-bottom:6px;text-align:left;">${msg}</li>`).join('')}
             </ul>

@@ -29,7 +29,7 @@
                 const { battery, functionality, appearance } = ctx;
                 const isWorking = functionality === 'Working';
                 const isBadBattery = ['70% - 79%', 'Below 70%'].includes(battery || '');
-                const isAppearanceOkForBattery = ['AB', 'BC', ''].includes(appearance || '');
+                const isAppearanceOkForBattery = ['Grade AB', 'Grade BC', ''].includes(appearance || '');
                 return isWorking && isBadBattery && !isAppearanceOkForBattery;
             }
         },

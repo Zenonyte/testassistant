@@ -280,7 +280,7 @@
              for (const [key, value] of Object.entries(itemStackList)) {
                  addToStackVisual(Number(key)+1)
              }
-             updateAccordionWindow();.
+             updateAccordionWindow();
         }, true)
         _G.showToast({title: "TamperMonkey",message: "Testing assistant (RUBY) Loaded",messageType: "info"})
     }

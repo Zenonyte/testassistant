@@ -269,7 +269,21 @@
         if (timeout) clearTimeout(timeout);
         globalObserver.__bhScanTimeout = setTimeout(scanAndAttach, 150);
     });
-
+    const mainUICreate = function() {
+        group = _G.createSettingsGroup("Model Lookup Settings")
+        _G.createSettingInput(group, "Max Window Height", "px","number", "var_model_lookup_window_height", function() {
+            updateAccordionWindow();
+        })
+        _G.createSettingDropdown(group, "Tool Location", [{id: 0,name: "Right"}, {id: 1,name: "Left"}], "var_model_lookup_location", function() {
+            toggleLocation();
+        })
+        _G.showToast({title: "TamperMonkey",message: "Model Lookup (RUBY) Loaded",messageType: "info"})
+    }
+    const menuStatusUpdate = () => {
+        _G.updateGroupState(group, "_idModelLookupUpdate")
+    }
     globalObserver.observe(document.documentElement, { childList: true, subtree: true });
     scanAndAttach();
+    _G.bind({onCreate: mainUICreate, search: "app-sidebar", id: "_idTACreateMenu", href: ["*"]})
+    _G.bind({onUpdate: menuStatusUpdate, search: "app-root", id: "_idTAMenuStatus", href: ["*"]})
 })();

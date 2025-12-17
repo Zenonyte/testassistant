@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [RUBY] Test assistant
 // @namespace    http://tampermonkey.net/
-// @version      67.69
+// @version      67.420
 // @description  fent is my passion
 // @include      /^https:\/\/r.*a.*tech\/?/
 // @updateURL    https://raw.githubusercontent.com/Zenonyte/testassistant/refs/heads/main/main.js

@@ -13,7 +13,8 @@
 
 (function () {
     'use strict';
-
+    let _G = unsafeWindow.tmScripts;
+    let isActive = false;
     const FIELD_CONFIG = { //gotta futureproof it just a bit ig
         battery: { labelText: 'Battery status', type: 'ng-select' },
         functionality: { labelText: 'Functionality', type: 'ng-select' },

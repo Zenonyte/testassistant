@@ -15,6 +15,7 @@
     'use strict';
     let _G = unsafeWindow.tmScripts;
     let isActive = false;
+    let testassistBypassToggle = _G.getValue("var_testassist_bypass_toggle", false)
     const FIELD_CONFIG = { //gotta futureproof it just a bit ig
         battery: { labelText: 'Battery status', type: 'ng-select' },
         functionality: { labelText: 'Functionality', type: 'ng-select' },
@@ -224,7 +225,7 @@
         button.addEventListener('click', (e) => {
             const ctx = readAllFields();
             const activeRules = evaluateRules(ctx);
-            if (activeRules.length && popupState.shownForToken !== popupState.currentToken) {
+            if (activeRules.length && popupState.shownForToken !== popupState.currentToken && testassistantBypassToggle) {
                 e.preventDefault();
                 e.stopPropagation();
                 showPopupOncePerAlert(activeRules.map(r => r.message));
@@ -270,17 +271,21 @@
         globalObserver.__bhScanTimeout = setTimeout(scanAndAttach, 150);
     });
     const mainUICreate = function() {
-        group = _G.createSettingsGroup("Model Lookup Settings")
-        _G.createSettingInput(group, "Max Window Height", "px","number", "var_model_lookup_window_height", function() {
-            updateAccordionWindow();
-        })
-        _G.createSettingDropdown(group, "Tool Location", [{id: 0,name: "Right"}, {id: 1,name: "Left"}], "var_model_lookup_location", function() {
-            toggleLocation();
-        })
-        _G.showToast({title: "TamperMonkey",message: "Model Lookup (RUBY) Loaded",messageType: "info"})
+        group = _G.createSettingsGroup("Testassistant Settings") //tulevikus v6imalus ise reegleid juurde lisada? sest tglt see tehtav, dropdownid jms, kinda nagu petsi phc mapper
+        _G.createSettingToggleButton(group, "Bypass after first warning", "var_testassist_bypass_toggle", function() {
+            testassistBypassToggle = _G.getValue("var_testassist_bypass_toggle", false)
+            console.log("clicked",testassistBypassToggle)
+            sequencialInputStack = [];
+            document.querySelector("#_q_tbody_content").innerHTML = '';
+             for (const [key, value] of Object.entries(itemStackList)) {
+                 addToStackVisual(Number(key)+1)
+             }
+             updateAccordionWindow();.
+        }, true)
+        _G.showToast({title: "TamperMonkey",message: "Testing assistant (RUBY) Loaded",messageType: "info"})
     }
     const menuStatusUpdate = () => {
-        _G.updateGroupState(group, "_idModelLookupUpdate")
+        _G.updateGroupState(group, "_idTAUpdate")
     }
     globalObserver.observe(document.documentElement, { childList: true, subtree: true });
     scanAndAttach();
